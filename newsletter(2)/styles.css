@@ -1,0 +1,70 @@
+/* Ortak kutu görünümü için */
+.centered-box {
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Sayfa genel düzeni */
+body {
+    border: 3px solid #121212;
+    width: 500px;
+    margin: auto;
+}
+
+/* Başlık */
+h1 {
+    text-align: center;
+    margin: 25px auto;
+}
+
+/* Görsel */
+img {
+    width: 380px;
+    border: 3px solid #121212;
+    margin-bottom: 15px;
+}
+img, p {
+    width: 380px;
+}
+img, p, input, button {
+    /* Ortak merkezi hizalama */
+    display: block;
+    margin: auto;
+}
+
+/* Paragraflar */
+p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+p.p-second {
+    text-align: center;
+}
+
+/* Input & Button ortak stilleri */
+input, button {
+    width: 230px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: 3px solid #121212;
+}
+
+/* Input özel placeholder stili */
+input::placeholder {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Button özel stilleri */
+button {
+    background-color: #121212;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Link rengi */
+a {
+    color: #121212;
+}
