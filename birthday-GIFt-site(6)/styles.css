@@ -9,12 +9,33 @@ h1, h2, h3, h4, p {
     text-shadow: 0 0 1px black;
 }
 
+#container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 #bff-img {
     width: 200px;
     cursor: pointer;
     border-radius: 50%;
     border: 6px solid #EFB0C9;
     margin-bottom: 10px;
+}
+
+.ikon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
 }
 
 #bday-age {
