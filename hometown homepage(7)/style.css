@@ -71,7 +71,6 @@ body{
     transition: transform 0.3s ease;
 }
 
-
 .card:hover {
     transform: scale(1.05);
 }
@@ -157,3 +156,195 @@ body{
 
 
 /* <!-- CUISINE SECTION --> */
+
+.food-timeline {
+  background: #fdf6f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.food-timeline h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #d35400;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item img {
+  width: 350px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.timeline-item:hover img {
+  filter: brightness(70%);
+}
+
+.timeline-item .text {
+  text-align: left;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #c0392b;
+}
+
+.timeline-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timeline-item .text {
+    text-align: center;
+  }
+}
+
+/* <!-- TRANSITION SECTION --> */
+
+.transport-transition {
+  background-image: url("images/istanbul3.gif");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transport-transition .gif-overlay {
+  padding: 30px 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.transport-transition .gif-overlay h2 {
+  color: white;
+  font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-shadow: 0 0 10px black;
+}
+
+/* <!-- TRANSPORTATION SECTION --> */
+
+.transport {
+  background-color: #f0f8ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.transport h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.transport-modes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.mode {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mode:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.mode img {
+  width: auto;
+  height: 150px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.mode:hover img {
+  filter: brightness(70%);
+}
+
+.mode h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #2980b9;
+}
+
+.mode p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* <!-- FOOTER SECTION --> */
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.footer .socials {
+  margin: 15px 0;
+}
+
+.footer .socials img {
+  width: 30px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
